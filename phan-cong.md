@@ -4,10 +4,15 @@
 
 | Mã | Họ tên | Máy (CPU / số lõi / GPU) | sps đo được | Vai trò chính |
 |---|---|---|---|---|
-| TV1 | | | | Môi trường: wrapper, mẹo huấn luyện, `env.py`, trình chiếu |
-| TV2 | | | | Mạng và vòng huấn luyện: `model.py`, `train.py`, tích hợp, hình vẽ, ghép báo cáo |
-| TV3 | | | | GAE, đánh giá nhiều seed, chọn và huấn luyện màn thưởng, phân tích thất bại |
-| TV4 | | | | Mất mát PPO và vòng cập nhật, đánh giá cuối, đóng gói bài nộp |
+| TV1 | Quốc Anh | | | Môi trường: wrapper, mẹo huấn luyện, `env.py`, trình chiếu |
+| TV2 | Công Kiên | | | **Điều phối nhóm**. Mạng và vòng huấn luyện: `model.py`, `train.py`, tích hợp, hình vẽ, ghép báo cáo |
+| TV3 | Hải Đăng | | | GAE, đánh giá nhiều seed, chọn và huấn luyện màn thưởng, phân tích thất bại |
+| TV4 | Trường | | | Mất mát PPO và vòng cập nhật, đánh giá cuối, đóng gói bài nộp |
+
+Đổi vai thì chỉ cần đổi tên trong bảng này. Gợi ý khi đổi:
+- TV3 và TV4 hợp với người vững toán và lý thuyết RL (GAE, hàm mất mát cắt).
+- TV1 hợp với người thích làm việc với môi trường và trình bày (giữ phần trình chiếu).
+- TV2 nên là người nắm kế hoạch chung.
 
 ## 0. Quy tắc chung
 
@@ -156,5 +161,6 @@ TV3: viết `plot_xpos.py`, xem video các lượt chết, ghi lại chỗ tác 
 
 ## 4. Họp nhóm
 
+- Công Kiên (TV2) điều phối: hẹn lịch, giữ thời gian, ghi lại các quyết định chốt.
 - Hai lần mỗi tuần, mỗi lần 15 phút. Mỗi người báo ba ý: đã xong gì, đang kẹt gì, máy đang chạy gì.
 - Các buổi họp chốt bắt buộc: cuối tuần 1 (cấu hình E0, máy chạy E0), cuối tuần 2 (checkpoint 1-1, màn thưởng, thí nghiệm cần seed 2), giữa tuần 3 (B1 có tiến triển không, có cần đổi sang biến thể không).
